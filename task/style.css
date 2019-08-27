@@ -1,0 +1,9 @@
+body {
+  padding-top: 50px;  /* Move body of page below navbar. */
+}
+
+.page-content {
+  padding: 10px;
+  text-align: center;
+}
+

@@ -1,0 +1,22 @@
+{
+    "name": "jpnathan90/swapi2019",
+    "license": "MIT",
+    "copyright": "Padmanathan 2019",
+    "authors": [
+        {
+            "name": "Padmanathan",
+            "email": "jpnathanstock@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~5.0",
+        "psr/log": "~1.0",
+        "netresearch/jsonmapper": "0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SWAPI\\": "src/"
+        }
+    }
+}

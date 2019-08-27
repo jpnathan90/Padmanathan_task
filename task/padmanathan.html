@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Southern Phone Company</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="validation.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Responsive navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!--  Display three horizontal lines when navbar collapsed. -->
+          <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Southern Phone Company</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="javascript:void(0);">Task</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid" id="index">
+	<div class="page-content">
+		<div class="container">
+			<div class="row">
+			</hr>
+				<a href="characters_jedi.php" target="_blank"><button type="button" class="btn btn-primary">Characters Jedi</button></a>
+				<a href="mammal_homeworlds.php" target="_blank"><button type="button" class="btn btn-success">​Mammal Homeworlds</button></a>
+				<a href="import_characters.php" target="_blank"><button type="button" class="btn btn-warning">​Import Characters​</button></a>
+				<a href="update_characters.php" target="_blank"><button type="button" class="btn btn-info">Update Characters​</button></a>
+				<a href="padmanathan_vehicle.php" target="_blank"><button type="button" class="btn btn-danger">Vehicle name more than 15 characters​</button></a>
+			  </hr>
+				<h2>Add Character</h2>
+			</div>
+		</div>
+	</div>
+
+
+
+	<form class="form-horizontal padmanathan_addCharacter" id="frmExample" novalidate>
+		<div class="form-group required">
+			<label for="name" class="col-sm-2 control-label">Name</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="name" name="name" placeholder="Enter character character Name" data-title="Please enter character name">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="homeworld_name" class="col-sm-2 control-label">Home world name</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="homeworld_name" name="homeworld_name" placeholder="Enter character Homeworld Name" data-title="Please enter character homeworld name">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="species_name" class="col-sm-2 control-label">Species name</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="species_name" name="species_name" placeholder="Enter character species Name" data-title="Please enter character species name">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="height" class="col-sm-2 control-label">Height</label>
+			<div class="col-sm-10">
+				<input type="number" class="form-control" id="height" name="height" placeholder="Enter character height(cm)" data-title="height required - Only numeric values allowed">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="mass" class="col-sm-2 control-label">Mass</label>
+			<div class="col-sm-10">
+				<input type="number" class="form-control" id="mass" name="mass" placeholder="Enter character mass" data-title="mass required - Only numeric values allowed">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="hair_color" class="col-sm-2 control-label">Hair Color</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="hair_color" name="hair_color" placeholder="Enter character character hair color" data-title="Please enter character hair color">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="skin_color" class="col-sm-2 control-label">Skin Color</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="skin_color" name="skin_color" placeholder="Enter character character skin color" data-title="Please enter character skin color">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="eye_color" class="col-sm-2 control-label">Eye Color</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="eye_color" name="eye_color" placeholder="Enter character character eye color" data-title="Please enter character eye color">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="birth_year" class="col-sm-2 control-label">Birth Year</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="birth_year" name="birth_year" placeholder="Enter character Birth Year" data-title="Please enter birth year">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label for="gender"  class="col-sm-2 control-label">Gender</label>
+			<div class="col-sm-10">
+			<select class="form-control" id="gender" name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="hermaphrodite">Hermaphrodite</option>
+				<option value="n/a">N/A</option>
+			</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<div class="frmPrc hide">
+					<button type="button" class="btn btn-primary" disabled="disabled"><i class="fa fa-spinner fa-spin"></i> Processing</button>
+				</div>
+				<div class="frmBtn">
+					<button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Submit</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

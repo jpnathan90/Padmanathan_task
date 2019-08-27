@@ -10,9 +10,6 @@ use SWAPI\SWAPI;
 
 $swapi = new SWAPI;
 
-$swapi->characters()->index();  => Character[]
-$swapi->characters()->index(2); => Character[]
-
 $swapi->vehicles()->get(1);     => Vehicle <X-wing>
 $swapi->planets()->get(7);      => Planet <Mustafar>
 

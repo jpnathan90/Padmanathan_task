@@ -2,7 +2,7 @@
 
 ## Usage
 
-Install with Composer: `composer require "jpnathan90/swapi2019:~1.0"`.
+Install with Composer: `composer require "jpnathan90/Padmanathan_task:~1.0"`.
 
 ```php
 require_once __DIR__ . '/vendor/autoload.php';
